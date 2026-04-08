@@ -38,20 +38,7 @@
     animation: fadeInUp 1.5s ease-out forwards;
 }
 
-/* Ensure music widget is visible on mobile after invitation opens */
-@media (max-width: 767px) {
-    #musicToggle {
-        opacity: 1 !important;
-        pointer-events: auto !important;
-    }
-}
 
-@media (min-width: 768px) {
-    #musicToggle {
-        opacity: 1 !important;
-        pointer-events: auto !important;
-    }
-}
 
 
 
