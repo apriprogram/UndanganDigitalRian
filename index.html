@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" class="overflow-hidden sm:overflow-auto">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -33,7 +33,7 @@
         }
     </script>
 </head>
-<body class="bg-soft text-navy overflow-hidden w-full max-w-[100vw]">
+<body class="bg-soft text-navy overflow-hidden">
     <!-- Cover/Hero Overlay -->
     <div id="cover" class="fixed inset-0 z-[100] flex items-center justify-center bg-black transition-all duration-1000 ease-in-out">
         <div id="coverSlideshow" class="slide-container opacity-60">
@@ -410,9 +410,7 @@
     </main>
 
     <!-- Music Toggle -->
-    <button id="musicToggle" class="fixed bottom-6 right-6 z-[90] w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center text-navy transition-all duration-500 hover:scale-110 opacity-0 pointer-events-none">
-        <i class="fas fa-play"></i>
-    </button>
+    <button id="musicToggle" class="fixed bottom-8 right-4 z-[9999] w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center text-navy transition-all duration-500 hover:scale-110 hidden"><i class="fas fa-play"></i></button>
 
     <audio id="bgMusic" loop>
         <source src="audio/Marry_Your_Daughter.mp3" type="audio/mpeg">
