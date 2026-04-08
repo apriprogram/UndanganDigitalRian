@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide Cover with Slide-out
         cover.classList.add('cover-out');
         
+        // Remove cover from layout completely after animation
+        setTimeout(() => {
+            cover.style.display = 'none';
+        }, 1000);
+        
         // Show Main Content
         mainContent.classList.remove('opacity-0');
         mainContent.classList.add('opacity-100');
@@ -24,6 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
         bgMusic.play();
         isPlaying = true;
         musicBtn.innerHTML = '<i class="fas fa-pause"></i>'; // show pause icon when music is playing
+        musicBtn.classList.remove('hidden');
+        musicBtn.classList.add('flex');
+        musicBtn.classList.remove('opacity-0', 'pointer-events-none');
+        musicBtn.classList.add('opacity-100', 'pointer-events-auto');
         
         // Scroll to top of main content (just in case)
         window.scrollTo(0, 0);
