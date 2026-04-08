@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="overflow-hidden sm:overflow-auto">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>The Wedding of Riandino & Aurora</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,7 +33,7 @@
         }
     </script>
 </head>
-<body class="bg-soft text-navy overflow-hidden">
+<body class="bg-soft text-navy overflow-hidden w-full max-w-[100vw]">
     <!-- Cover/Hero Overlay -->
     <div id="cover" class="fixed inset-0 z-[100] flex items-center justify-center bg-black transition-all duration-1000 ease-in-out">
         <div id="coverSlideshow" class="slide-container opacity-60">
@@ -44,16 +44,16 @@
             
             <!-- Bagian Atas: Informasi Pernikahan (Menggunakan Animasi CSS Murni) -->
             <div class="animate-fadeInDown">
-                <h4 class="font-script text-3xl mb-2 italic">The Wedding</h4>
+                <h4 class="font-script text-3xl mb-2 italic px-2">The Wedding</h4>
                 <h4 class="font-sans text-[15px] md:text-xs mb-2 italic text-white/70">0f</h4>
-                <h1 class="font-script text-6xl md:text-8xl mb-6 tracking-wide drop-shadow-2xl">Riandino & Aurora</h1>
+                <h1 class="font-script text-5xl md:text-8xl mb-6 tracking-wide drop-shadow-2xl px-2">Riandino & Aurora</h1>
             </div>
 
             <!-- Bagian Bawah: Nama Tamu & Tombol (Menggunakan Animasi CSS Murni) -->
             <div class="animate-fadeInUp" style="animation-delay: 0.5s;">
                 <div class="mb-10">
-                    <p class="font-sans text-[10px] md:text-xs uppercase tracking-[0.3em] text-white/70 mb-4">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
-                    <h2 id="guestName" class="font-script text-5xl md:text-7xl text-white drop-shadow-2xl mb-8">Nama Tamu</h2>
+                    <p class="font-sans text-[10px] md:text-xs uppercase tracking-[0.3em] text-white/70 mb-4 px-2">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+                    <h2 id="guestName" class="font-script text-4xl md:text-7xl text-white drop-shadow-2xl mb-8 px-2 break-words">Nama Tamu</h2>
                 </div>
 
                 <button id="openInvitation" class="bg-white/10 backdrop-blur-md border border-white/30 text-white font-sans uppercase tracking-[0.3em] px-10 py-4 rounded-full hover:bg-white hover:text-black transition-all duration-500 shadow-2xl text-xs md:text-sm font-bold">
