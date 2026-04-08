@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
         mainContent.classList.remove('opacity-0');
         mainContent.classList.add('opacity-100');
         
-        // Play Music
+        bgMusic.currentTime = 57.5;
         bgMusic.play();
         isPlaying = true;
-        musicBtn.classList.remove('opacity-0', 'pointer-events-none');
+        musicBtn.innerHTML = '<i class="fas fa-pause"></i>'; // show pause icon when music is playing
         
         // Scroll to top of main content (just in case)
         window.scrollTo(0, 0);
@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     musicBtn.addEventListener('click', () => {
         if (isPlaying) {
             bgMusic.pause();
-            musicBtn.innerHTML = '<i class="fas fa-play text-gold"></i>';
+            musicBtn.innerHTML = '<i class="fas fa-play"></i>';
         } else {
             bgMusic.play();
-            musicBtn.innerHTML = '<i class="fas fa-music animate-pulse"></i>';
+            musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
         }
         isPlaying = !isPlaying;
     });
